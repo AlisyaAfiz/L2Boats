@@ -5,21 +5,19 @@ const styles = StyleSheet.create({
     boats: {
         flex: 1,
         flexDirection: 'column',
-        borderColor: 'black',
-        borderWidth: 3,
         margin: 10,
         alignItems:'center',
-        padding: 10,
-        backgroundColor: 'lightblue'
+        paddingTop: 10,
+        paddingBottom: 20,
+        backgroundColor: 'white',
+        borderRadius: 10,
     },
     desc: {
         textAlign: 'center',
         margin: 10,
         fontStyle: 'italic',
         backgroundColor: 'skyblue',
-        padding: 7,
-        borderColor: 'black',
-        borderWidth: 2
+        padding: 8
     },
     img: {
         width:350,
@@ -30,9 +28,10 @@ const styles = StyleSheet.create({
 const Boat = ({name, description, icon_name, picture})=> {
     return (
         <View style={styles.boats}>
-            <Text style={{marginTop: 15, marginBottom: 15}}>
-                <Icon name={icon_name} size={30} color="black"><Text> </Text>{name}</Icon>
-            </Text>
+            <View style={{marginTop: 15, marginBottom: 15, flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center'}}>
+                <Icon name={icon_name} size={30} color="#4a49b6"/>
+                    <Text style={{fontWeight: 'bold', color: '#4a49b6', fontSize: 27, padding: 5}}>{name}</Text>
+            </View>
             <Text style={styles.desc}>
                 {description}
             </Text>

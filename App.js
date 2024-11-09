@@ -9,14 +9,16 @@ const styles = StyleSheet.create({
             color: 'white',
             backgroundColor: 'skyblue',
             fontWeight: 'bold',
-            padding: 20
+            padding: 20,
+            borderRadius: 10
         }
 });
 
 const AllBoats =() => {
   return (
+      <View style={{backgroundColor: '#4a49b6', padding: 10}}>
       <ScrollView>
-              <View style={{marginTop: 50}}>
+              <View style={{marginTop: 30, marginBottom: 10}}>
           <Text style={styles.title}>GetABoat - For Sale</Text>
               </View>
           <Boat icon_name="boat" name="Sea Ray 500 Sundancer" description="Contoured lines and dramatic styling reveal a refined and powerful presence that will take your breath away." picture={require('./img/sea_ray.jpg')}/>
@@ -26,6 +28,7 @@ const AllBoats =() => {
           <Boat icon_name="boat" name="Bayliner 175 Bowrider" description="Its outboard power gives you increased cockpit space and quiet, fuel-efficient performance." picture={require('./img/bayliner.jpg')}/>
           <Boat icon_name="boat" name="Fairline Targa 47" description="Stretch out on the large sun bed aft while friends lounge in the generously appointed cockpit." picture={require('./img/fairline.jpg')}/>
       </ScrollView>
+      </View>
   );
 }
 
