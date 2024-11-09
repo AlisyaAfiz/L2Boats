@@ -18,7 +18,7 @@ const AllBoats =() => {
   return (
       <View style={{backgroundColor: '#4a49b6', padding: 10}}>
       <ScrollView>
-              <View style={{marginTop: 30, marginBottom: 10}}>
+              <View style={{marginTop: 40, marginBottom: 10}}>
           <Text style={styles.title}>GetABoat - For Sale</Text>
               </View>
           <Boat icon_name="boat" name="Sea Ray 500 Sundancer" description="Contoured lines and dramatic styling reveal a refined and powerful presence that will take your breath away." picture={require('./img/sea_ray.jpg')}/>
